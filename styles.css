@@ -29,7 +29,7 @@
   box-shadow: 10px 10px 10px rgba(16, 137, 87, 0.636);
   border: 1px solid black;
   background-color: green;
-  animation: super-cool 10s linear 0s infinite alternate;
+  /* animation: super-cool 10s linear 0s infinite alternate; */
 }
 
 .contact-info {
