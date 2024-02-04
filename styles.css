@@ -1,20 +1,53 @@
-@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
-
 * {
-  font-family: "Protest Guerrilla", sans-serif;
   margin: 0;
   padding: 0;
+  color: beige;
+}
+
+body {
+  background: grey;
+}
+
+.header {
+  height: 300px;
+  border-radius: 15px;
+  background: rgb(27, 31, 35);
+  margin: 10px;
+  min-width: 200px;
+  padding: 15px;
+  position: relative;
+}
+
+.background-image {
+  background: url("https://images.inc.com/uploaded_files/image/1024x576/getty_485008244_105123.jpg");
+  border-radius: 10px 10px 0 0;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-size: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .profile-picture {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 50px;
-  height: 100px;
-  width: 100px;
-  margin: 20px;
-  box-shadow: 4px 4px 2px rgba(75, 38, 77, 0.636);
+  position: relative;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  margin-top: 40px;
+  border: 2px solid rgb(27, 31, 35);
+  z-index: 2;
+}
+
+.name {
+  font-weight: bolder;
+}
+
+.skills {
+  font-size: xx-small;
+  font-weight: normal;
 }
 
 .work-experience-container {
@@ -23,41 +56,12 @@
 
 .work-experience {
   width: 500px;
-  height: 500px;
-  font-size: x-large;
   margin: 10px;
   box-shadow: 10px 10px 10px rgba(16, 137, 87, 0.636);
   border: 1px solid black;
-  background-color: green;
-  /* animation: super-cool 10s linear 0s infinite alternate; */
 }
 
 .contact-info {
-}
-
-@keyframes super-cool {
-  0% {
-    background-color: green;
-    width: 500px;
-  }
-
-  25% {
-    font-size: small;
-  }
-
-  50% {
-    background-color: blue;
-    width: 250px;
-  }
-
-  75% {
-    font-size: 500px;
-  }
-
-  100% {
-    background-color: red;
-    width: 0px;
-  }
 }
 
 @media all and (max-width: 1000px) {
