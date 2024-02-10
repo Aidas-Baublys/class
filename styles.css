@@ -63,26 +63,25 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr;
-  row-gap: 10px;
-  column-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px 5px;
+  place-items: center center;
+  place-content: center center;
 }
 
 .grid-item {
   background: yellowgreen;
   border: 2px solid black;
   color: black;
+  height: 30px;
+  width: 30px;
 }
 
-.wider {
-  grid-row: 2/6;
+.place {
   grid-column: 1/3;
-}
-
-.heigher {
-  grid-row: 3/7;
-  grid-column: 2/3;
+  grid-row: 2/5;
+  place-self: start end;
 }
 
 @media all and (max-width: 1000px) {
